@@ -1,3 +1,14 @@
+.video {
+    margin: 64px auto;
+    width: 400px;
+}
+
+@media (min-width: 630px) {
+    .video {
+        width: 600px;
+    }
+}
+
 .u-section-1 {
     background-image: none;
     min-height: 614px;
@@ -391,7 +402,7 @@
 }
 
 .u-section-3 .u-text-4 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 400;
     margin: 0;
 }
