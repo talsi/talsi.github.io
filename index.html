@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
 <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="About Collaboration">
@@ -9,14 +26,25 @@
     <title>היפות שלי - חוגגות את זה</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="home.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="jquery.js" defer="" onload="initFormSubmitHandler()"></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script type="text/javascript">
+        function initFormSubmitHandler() {
+            window.submitted = false;
+            $('#gform').on('submit', function(e) {
+                window.submitted = true;
+                $('#gform *').hide();
+                $('#gform').prepend('<p>ההודעה נשלחה בהצלחה...</p>');
+            });
+        }
+    </script>
     <meta name="generator" content="Nicepage 4.4.3, nicepage.com">
+    <!--
     <link id="u-theme-google-font" rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-
+    -->
 
     <script type="application/ld+json">{
         "@context": "http://schema.org",
@@ -117,18 +145,16 @@
                          style="text-align: right; direction: rtl;">
                         <h2 class="u-text u-text-1">ברוכות הבאות!</h2>
                         <p class="u-text u-text-2">
-                            "היפות שלי" הינו עסק עצמאי, נשי של הפעלות למסיבת רווקות. אנחנו רותם ולינוי- צמד הנשים
-                            שמאחורי המותג. שתינו עובדות סוציאליות, מטפלות ויועצות בתחום המיניות.
+                            נבחרתן לארגן מסיבת רווקות? מתכננות ערב לחברות בלבד? שוברות ת'ראש בבחירת הפעלה?
                             <br>
-                            הניסיון המקצועי שלנו הופך את "היפות שלי" למוצר מנצח שמביא בשורה חדשה לתחום ההפעלות למסיבות
-                            רווקות.
+                            הגעתן ל"היפות שלי"- אתן יכולות לנוח!
                             <br>
-                            אנו מאמינות שניתן להפגיש בין מיניות לידע (ניגודים לכאורה).
                             <br>
-                            הנשים שיוזמנו להפעלות בהנחייתנו, ייהנו משילוב מרענן בין קבלת ידע נחוץ ומעניין לבין חוויה
-                            אינטימית מלאת צחוק, שחרור והנאה יחד עם כל הנוכחות.
+                            אנחנו רותם ולינוי- צמד הנשים שעומד מאחורי המותג, מטפלות ויועצות בתחום המיניות. מגיעות אליכן להפעלה שלא תשכחו, מלאת הומור ומשחקים, ועם ידע נשי חשוב ומעניין.
                             <br>
-                            מזמינות אתכן לחגוג יחד איתנו את המסיבה המרגשת שלכן!
+                            <span style="font-weight: bold;">
+                                מזמינות אתכן לחגוג יחד איתנו את המסיבה המרגשת שלכן!
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -164,7 +190,7 @@
 
 
               </span>
-                        <h2 class="u-custom-font u-font-raleway u-text u-text-1">
+                        <h2 class="u-custom-font u-text u-text-1">
                             וואוו וואוו וואו, ממליצה בחום!!
                             <br>
                         </h2>
@@ -198,8 +224,8 @@
 </section>
 <section class="u-align-center u-clearfix u-palette-1-dark-3 u-section-3" id="carousel_e93a">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-text u-text-1">חבילות, מחירים ומבצעים</h2>
-        <p class="u-text u-text-2">קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף</p>
+        <h2 class="u-text u-text-1">החבילות שלנו</h2>
+        <p class="u-text u-text-2" dir="rtl">בואו לחגוג את זה איתנו!</p>
         <div class="u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gutter-30 u-layout-wrap u-layout-wrap-1">
             <div class="u-layout">
                 <div class="u-layout-row" style="direction: rtl;">
@@ -207,44 +233,44 @@
                         <div class="u-border-4 u-border-palette-4-base u-container-layout u-container-layout-1">
                             <div class="u-align-center u-container-style u-expanded-width u-group u-palette-4-base u-group-1">
                                 <div class="u-container-layout u-valign-middle u-container-layout-2">
-                                    <h3 class="u-text u-text-3"><span class="u-icon u-icon-2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 245.827 245.827" style="enable-background:new 0 0 245.827 245.827;" xml:space="preserve"><g><g><g><path style="fill:#ffffff;"d="M223.336,148.384l-0.137-23.527l22.628-12.662L122.576,47.195L0,113.495l49.144,28.216     l0.098,16.766l0.01,1.339l0.449-0.215c-0.518,0.703-0.85,1.426-0.84,2.149c0.039,8.246,33.326,14.772,74.41,14.548     c41.064-0.215,74.302-7.122,74.273-15.349c0-0.723-0.381-1.426-0.889-2.149l0.449,0.215v-1.339l-0.088-16.834l21.309-13.258     l0.117,20.83c-2.345,1.006-3.976,3.312-3.957,6.009c0.02,3.537,2.892,6.399,6.458,6.37c3.586-0.02,6.429-2.912,6.409-6.439     C227.332,151.657,225.691,149.371,223.336,148.384z M123.241,170.621c-36.452,0.205-66.017-3.801-66.046-8.91     c-0.029-5.11,29.496-9.399,65.949-9.585c36.462-0.205,66.017,3.781,66.037,8.881     C189.209,166.098,159.703,170.426,123.241,170.621z M195.335,127.183c-4.934-5.188-22.618-18.886-72.426-18.602     c-49.877,0.264-67.336,14.128-72.211,19.394l-0.029-4.963c0,0,14.147-21.524,72.202-21.827     c58.025-0.313,72.436,21.045,72.436,21.045L195.335,127.183z M215.755,162.199l-2.511,36.433     c7.767-12.203,14.255-7.66,14.255-7.66l-0.156-28.832C218.998,165.414,215.755,162.199,215.755,162.199z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <h3 class="u-text u-text-3"><span class="u-icon u-icon-2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 245.827 245.827" style="enable-background:new 0 0 245.827 245.827;" xml:space="preserve"><g><g><g><path style="fill:#242424;"d="M223.336,148.384l-0.137-23.527l22.628-12.662L122.576,47.195L0,113.495l49.144,28.216     l0.098,16.766l0.01,1.339l0.449-0.215c-0.518,0.703-0.85,1.426-0.84,2.149c0.039,8.246,33.326,14.772,74.41,14.548     c41.064-0.215,74.302-7.122,74.273-15.349c0-0.723-0.381-1.426-0.889-2.149l0.449,0.215v-1.339l-0.088-16.834l21.309-13.258     l0.117,20.83c-2.345,1.006-3.976,3.312-3.957,6.009c0.02,3.537,2.892,6.399,6.458,6.37c3.586-0.02,6.429-2.912,6.409-6.439     C227.332,151.657,225.691,149.371,223.336,148.384z M123.241,170.621c-36.452,0.205-66.017-3.801-66.046-8.91     c-0.029-5.11,29.496-9.399,65.949-9.585c36.462-0.205,66.017,3.781,66.037,8.881     C189.209,166.098,159.703,170.426,123.241,170.621z M195.335,127.183c-4.934-5.188-22.618-18.886-72.426-18.602     c-49.877,0.264-67.336,14.128-72.211,19.394l-0.029-4.963c0,0,14.147-21.524,72.202-21.827     c58.025-0.313,72.436,21.045,72.436,21.045L195.335,127.183z M215.755,162.199l-2.511,36.433     c7.767-12.203,14.255-7.66,14.255-7.66l-0.156-28.832C218.998,165.414,215.755,162.199,215.755,162.199z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                     </span>&nbsp;חבילה לסטודנטיות
                                     </h3>
                                 </div>
                             </div>
                             <div class="u-container-style u-group u-group-2">
-                                <div class="u-container-layout u-valign-bottom-md u-valign-top-lg u-valign-top-sm u-valign-top-xl u-valign-top-xs u-container-layout-3">
+                                <div class="u-container-layout u-valign-top-lg u-valign-top-sm u-valign-top-xl u-valign-top-xs u-container-layout-3">
                                     <h4 class="u-align-center u-custom-font u-font-arial u-text u-text-palette-4-base u-text-5">
                                         החל מ-</h4>
                                     <h2 class="u-align-center u-custom-font u-font-montserrat u-text u-text-4">
                                         ₪1,000</h2>
                                     <h4 class="u-align-center u-custom-font u-font-arial u-text u-text-palette-4-base u-text-5">
-                                        הפעלה מגבשת בסיסית</h4>
+                                        הפעלה מגבשת</h4>
                                     <ul class="u-align-right u-custom-list u-text u-text-6" style="direction: ltr;">
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                         </li>
                                         <li style="margin-left: 1.8em;">הפעלה (שעה)</li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             עד 14 בנות
                                         </li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             במרכז הארץ
                                         </li>
@@ -309,37 +335,37 @@
                                     <ul class="u-align-right u-custom-list u-text u-text-6" style="direction: ltr;">
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                         </li>
                                         <li style="margin-left: 1.8em;">הפעלה (שעה וחצי)</li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             עד 14 בנות
                                         </li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             במרכז הארץ
                                         </li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             מתנה לכל משתתפת
                                         </li>
@@ -410,55 +436,55 @@
                                     <ul class="u-align-right u-custom-list u-text u-text-6" style="direction: ltr;">
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                         </li>
                                         <li style="margin-left: 1.8em;">הפעלה (שעה וחצי)</li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             עד 14 בנות
                                         </li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             במרכז הארץ
                                         </li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             מתנה לכל משתתפת
                                         </li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             מתנה משודרגת לכלה
                                         </li>
                                         <li style="margin-left: 1.8em;">
                                             <div class="u-list-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <!--<svg xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                                      xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512"
-                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>
+                                                     id="svg-0cec"><path d="m202.6 478-202.6-186.6 70.5-76.6 121.5 111.9 239.4-292.7 80.6 65.9z" fill="limegreen"></path></svg>-->
                                             </div>
                                             אלכוהול
                                         </li>
@@ -490,35 +516,49 @@
                         <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2">
                             <div class="u-container-layout u-valign-top u-container-layout-2" style="direction: rtl;">
                                 <h2 class="u-text u-text-default u-text-1" style="direction: ltr;">צרו קשר</h2>
+                                <p class="u-small-text u-text u-text-variant u-text-1 contact-us-details">
+                                    <span>hayafotsheli@gmail.com</span>
+                                    <br>
+                                    <span>
+                                        <span>רותם:</span>
+                                        <span>054-5887086</span>
+                                    </span>
+                                    <br>
+                                    <span>
+                                        <span style="margin-left: 12px;">לינוי:</span>
+                                        <span>052-8653388</span>
+                                    </span>
+                                </p>
                                 <div class="u-expanded-width u-form u-form-1">
-                                    <form action="#" method="POST"
+                                    <form action="https://docs.google.com/forms/d/e/1FAIpQLScgLTc6GHupDLE2b8khwjYdhJ4vHVbqb8rXuF1Na6VUW_4xFA/formResponse?"
+                                          method="POST"
+                                          target="hidden_iframe"
                                           class="u-block-25be-21 u-clearfix u-form-spacing-25 u-form-vertical u-inner-form"
-                                          source="custom"><!-- hidden inputs for siteId and pageId -->
+                                          id="gform"
+                                          name="gform">
                                         <div class="u-form-group u-form-name">
-                                            <label for="name-e4cc" class="u-form-control-hidden u-label">שם</label>
-                                            <input type="text" placeholder="שם:" id="name-e4cc" name="name"
+                                            <label for="entry.1227296809" class="u-form-control-hidden u-label">שם</label>
+                                            <input type="text" placeholder="שם:" id="entry.1227296809" name="entry.1227296809"
                                                    class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle"
                                                    required="">
                                         </div><!-- always visible -->
                                         <div class="u-form-email u-form-group">
-                                            <label for="email-e4cc" class="u-form-control-hidden u-label">דוא"ל</label>
+                                            <label for="entry.677624762" class="u-form-control-hidden u-label">דוא"ל</label>
                                             <input type="email" placeholder='דוא"ל:'
-                                                   id="email-e4cc" name="email"
+                                                   id="entry.677624762" name="entry.677624762"
                                                    class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle"
                                                    required="">
                                         </div>
                                         <div class="u-form-group u-form-message">
-                                            <label for="message-e4cc"
+                                            <label for="entry.847673373"
                                                    class="u-form-control-hidden u-label">הודעה</label>
                                             <textarea placeholder="הודעה:" rows="4" cols="50"
-                                                      id="message-e4cc" name="message"
+                                                      id="entry.847673373" name="entry.847673373"
                                                       class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-grey-5 u-input u-input-rectangle"
                                                       required="" style="resize: none;"></textarea>
                                         </div>
                                         <div class="u-form-group u-form-submit">
-                                            <a href="#"
-                                               class="u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">שלח/י</a>
-                                            <input type="submit" value="submit" class="u-form-control-hidden u-grey-5">
+                                            <input type="submit" value="שלח/י" class="u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">
                                         </div>
                                         <div class="u-form-send-message u-form-send-success"> Thank you! Your message
                                             has been sent.
@@ -526,13 +566,13 @@
                                         <div class="u-form-send-error u-form-send-message"> Unable to send your message.
                                             Please fix errors then try again.
                                         </div>
-                                        <input type="hidden" value="" name="recaptchaResponse">
                                     </form>
+                                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                                 </div>
                                 <h2 class="u-text u-text-default u-text-2">follow us</h2>
                                 <div class="u-social-icons u-spacing-20 u-social-icons-1"
                                      style="flex-direction: row-reverse">
-                                    <a class="u-social-url" target="_blank" href=""><span
+                                    <a class="u-social-url" target="_blank" href="https://www.facebook.com/hayafot/"><span
                                             class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-1"><svg
                                             class="u-svg-link" preserveAspectRatio="xMidYMin slice"
                                             viewBox="0 0 112.2 112.2"><use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -541,16 +581,7 @@
                                             style="enable-background:new 0 0 112.2 112.2;" xml:space="preserve"
                                             id="svg-05cd" class="u-svg-content"><path d="M56.1,0C25.1,0,0,25.1,0,56.1c0,31,25.1,56.1,56.1,56.1c31,0,56.1-25.1,56.1-56.1C112.2,25.1,87.1,0,56.1,0z M71.6,34.3h-8.2c-1.3,0-3.2,0.7-3.2,3.5v7.6h11.3l-1.3,12.9h-10V95H45V58.3h-7.2V45.4H45v-8.3c0-6,2.8-15.3,15.3-15.3l11.2,0V34.3z "></path></svg></span>
                                     </a>
-                                    <a class="u-social-url" target="_blank" href=""><span
-                                            class="u-icon u-icon-circle u-social-icon u-social-twitter u-icon-2"><svg
-                                            class="u-svg-link" preserveAspectRatio="xMidYMin slice"
-                                            viewBox="0 0 112.2 112.2"><use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                           xlink:href="#svg-ed78"></use></svg><svg
-                                            x="0px" y="0px" viewBox="0 0 112.2 112.2"
-                                            style="enable-background:new 0 0 112.2 112.2;" xml:space="preserve"
-                                            id="svg-ed78" class="u-svg-content"><path d="M56.1,0C25.1,0,0,25.1,0,56.1s25.1,56.1,56.1,56.1s56.1-25.1,56.1-56.1S87.1,0,56.1,0z M83.8,47.3 c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2c-7.6,0-14.6-2.2-20.6-6c1,0.1,2.1,0.2,3.2,0.2c6.3,0,12.1-2.1,16.7-5.7 c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1c0-0.1,0-0.1,0-0.2 c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14c-0.2-1-0.3-2-0.3-3.1 c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4c2.7-0.3,5.3-1,7.7-2.1 C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
-                                    </a>
-                                    <a class="u-social-url" target="_blank" href=""><span
+                                    <a class="u-social-url" target="_blank" href="https://instagram.com/ha_yafot"><span
                                             class="u-icon u-icon-circle u-social-icon u-social-instagram u-icon-3"><svg
                                             class="u-svg-link" preserveAspectRatio="xMidYMin slice"
                                             viewBox="0 0 112.2 112.2"><use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -560,15 +591,6 @@
                                             id="svg-556d" class="u-svg-content"><path d="M56.1,0C25.1,0,0,25.1,0,56.1c0,31,25.1,56.1,56.1,56.1c31,0,56.1-25.1,56.1-56.1C112.2,25.1,87.1,0,56.1,0z M90.6,73.4c0,9.6-7.8,17.5-17.5,17.5H38.6c-9.6,0-17.5-7.9-17.5-17.6V38.8c0-9.6,7.8-17.5,17.5-17.5h34.5c9.6,0,17.5,7.8,17.5,17.5 V73.4z"></path><path
                                             d="M73.1,28.9H38.6c-5.4,0-9.9,4.4-9.9,9.9v34.5c0,5.4,4.4,9.9,9.9,9.9h34.5c5.4,0,9.9-4.4,9.9-9.9V38.8 C83,33.4,78.6,28.9,73.1,28.9z M55.9,74C46,74,38,66,38,56.1c0-9.9,8-17.9,17.9-17.9c9.9,0,17.9,8,17.9,17.9 C73.8,66,65.8,74,55.9,74z M74.3,41.9c-2.3,0-4.2-1.9-4.2-4.2s1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2S76.6,41.9,74.3,41.9z"></path><path
                                             d="M55.9,45.8c-5.7,0-10.4,4.6-10.3,10.3c0,5.7,4.6,10.3,10.3,10.3s10.3-4.6,10.3-10.3 C66.2,50.4,61.6,45.8,55.9,45.8z"></path></svg></span>
-                                    </a>
-                                    <a class="u-social-url" target="_blank" href=""><span
-                                            class="u-icon u-icon-circle u-social-google u-social-icon u-icon-4"><svg
-                                            class="u-svg-link" preserveAspectRatio="xMidYMin slice"
-                                            viewBox="0 0 112.2 112.2"><use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                           xlink:href="#svg-af15"></use></svg><svg
-                                            x="0px" y="0px" viewBox="0 0 112.2 112.2"
-                                            style="enable-background:new 0 0 112.2 112.2;" xml:space="preserve"
-                                            id="svg-af15" class="u-svg-content"><path d="M56.1,0C25.1,0,0,25.1,0,56.1s25.1,56.1,56.1,56.1c31,0,56.1-25.1,56.1-56.1S87.1,0,56.1,0z M60.1,73.8 c-5.7,7.4-16.3,9.5-24.9,6.6c-9.1-3-15.8-12.2-15.6-21.9c-0.5-11.9,10-22.9,21.9-23.1c6.1-0.5,12,1.8,16.6,5.7 c-1.9,2.1-3.8,4.1-5.9,6.1c-4.1-2.5-8.9-4.3-13.7-2.7c-7.6,2.2-12.3,11.2-9.4,18.7c2.3,7.8,11.8,12.1,19.3,8.8 c3.9-1.4,6.4-4.9,7.5-8.8c-4.4-0.1-8.8,0-13.3-0.2c0-2.6,0-5.2,0-7.9c7.4,0,14.7,0,22.1,0C65.2,61.8,64.2,68.7,60.1,73.8z M92.3,61.9c-2.2,0-4.4,0-6.6,0c0,2.2,0,4.4,0,6.6c-2.2,0-4.4,0-6.6,0c0-2.2,0-4.4,0-6.6c-2.2,0-4.4,0-6.6,0c0-2.2,0-4.4,0-6.6 c2.2,0,4.4,0,6.6,0c0-2.2,0-4.4,0.1-6.6c2.2,0,4.4,0,6.6,0c0,2.2,0,4.4,0,6.6c2.2,0,4.4,0,6.6,0C92.3,57.5,92.3,59.7,92.3,61.9z"></path></svg></span>
                                     </a>
                                 </div>
                             </div>
@@ -590,8 +612,13 @@
 
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-3079">
     <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="u-small-text u-text u-text-variant u-text-1" style="font-family: varela, Roboto, sans-serif;">
+            <span>היפות שלי // הפעלות למסיבת רווקות</span>
+            <br>
+            <span>רותם: 054-5887086, לינוי: 052-8653388</span>
+            <br>
+            <span>hayafotsheli@gmail.com</span>
+        </p>
     </div>
 </footer>
 <!--

@@ -1,3 +1,32 @@
+@font-face {
+    font-family: 'Alef';
+    src: url('/fonts/Alef-Webfont/Alef-bold.eot');
+    src: url('/fonts/Alef-Webfont/Alef-bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Alef-Webfont/Alef-bold.woff') format('woff'),
+    url('/fonts/Alef-Webfont/Alef-bold.ttf') format('truetype'),
+    url('/fonts/Alef-Webfont/Alef-bold.svg#alefbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alef';
+    src: url('/fonts/Alef-Webfont/Alef-regular.eot');
+    src: url('/fonts/Alef-Webfont/Alef-regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Alef-Webfont/Alef-regular.woff') format('woff'),
+    url('/fonts/Alef-Webfont/Alef-regular.ttf') format('truetype'),
+    url('/fonts/Alef-Webfont/Alef-regular.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'varela';
+    src: url('/fonts/Varela_Round/VarelaRound-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .video {
     margin: 64px auto;
     width: 400px;
@@ -20,8 +49,9 @@
 
 .u-section-1 .u-image-1 {
     min-height: 614px;
-    background-image: url("images/img-1.jpg");
-    background-position: 50% 58.2%;
+    background-image: url('images/img-1.jpg');
+    background-position: 50% 50%;
+    background-size: 112%;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -46,12 +76,14 @@
 
 .u-section-1 .u-text-1 {
     line-height: 1.6;
-    font-weight: 700;
+    /*font-weight: 700;*/
+    font-size: 4rem;
     margin: 0;
 }
 
 .u-section-1 .u-text-2 {
-    font-size: 1.125rem;
+    max-width: 824px;
+    font-size: 1.3rem;
     line-height: 1.8;
     font-weight: 300;
     margin: 20px 0 0;
@@ -160,7 +192,7 @@
 
 .u-section-2 .u-image-1 {
     width: 350px;
-    height: 350px;
+    /*height: 350px;*/
     margin: 0 auto;
 }
 
@@ -185,7 +217,7 @@
 }
 
 .u-section-2 .u-text-2 {
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     line-height: 2;
     margin: 18px 0 0;
 }
@@ -201,7 +233,7 @@
 }
 
 .u-section-2 .u-text-5 {
-    font-family: "Open Sans", sans-serif;
+    font-family: varela, Roboto, sans-serif;
     margin: 20px auto 0 0;
 }
 
@@ -252,7 +284,7 @@
     }
 
     .u-section-2 .u-image-1 {
-        height: 389px;
+        /*height: 389px;*/
         margin-top: 41px;
         margin-right: initial;
         margin-left: initial;
@@ -296,7 +328,7 @@
     }
 
     .u-section-2 .u-image-1 {
-        height: 559px;
+        /*height: 559px;*/
         margin-top: 0;
         width: auto;
         margin-right: initial;
@@ -330,7 +362,7 @@
     }
 
     .u-section-2 .u-image-1 {
-        height: 344px;
+        /*height: 344px;*/
         width: auto;
         margin-right: initial;
         margin-left: initial;
@@ -346,15 +378,18 @@
 }
 
 .u-section-3 .u-text-1 {
-    font-weight: 900;
+    /*font-weight: 900;*/
     font-size: 4.5rem;
     width: 842px;
     margin: 60px auto 0;
 }
 
 .u-section-3 .u-text-2 {
+    font-family: varela, Roboto, sans-serif;;
     width: 842px;
-    margin: 47px auto 0;
+    margin: 0 auto 0;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
 }
 
 .u-section-3 .u-layout-wrap-1 {
@@ -388,7 +423,7 @@
 }
 
 .u-section-3 .u-icon-1 {
-    color: rgb(255, 255, 255) !important;
+    color: #242424 !important;
 }
 
 .u-section-3 .u-group-2 {
@@ -417,7 +452,7 @@
 
 .u-section-3 .u-text-6 {
     line-height: 2.5;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     margin: 52px 0 0;
 }
@@ -458,7 +493,7 @@
 }
 
 .u-section-3 .u-icon-2 {
-    color: rgb(255, 255, 255) !important;
+    color: #242424 !important;
 }
 
 .u-section-3 .u-group-4 {
@@ -528,7 +563,7 @@
 }
 
 .u-section-3 .u-icon-3 {
-    color: rgb(255, 255, 255) !important;
+    color: #242424 !important;
 }
 
 .u-section-3 .u-group-6 {
@@ -685,7 +720,7 @@
     }
 
     .u-section-3 .u-text-4 {
-        font-size: 3.4375rem;
+        font-size: 2.5rem;
         margin-right: 1px;
     }
 
@@ -694,7 +729,7 @@
     }
 
     .u-section-3 .u-text-6 {
-        font-size: 0.875rem;
+        font-size: 1rem;
         width: auto;
         margin-top: 67px;
         margin-left: 1px;
@@ -743,7 +778,7 @@
     }
 
     .u-section-3 .u-text-8 {
-        font-size: 3.4375rem;
+        font-size: 2.5rem;
     }
 
     .u-section-3 .u-btn-2 {
@@ -787,7 +822,7 @@
     }
 
     .u-section-3 .u-text-12 {
-        font-size: 3.4375rem;
+        font-size: 2.5rem;
     }
 
     .u-section-3 .u-text-14 {
@@ -974,6 +1009,16 @@
 .u-section-4 .u-text-1 {
     text-transform: uppercase;
     margin: 0 auto 0 0;
+}
+
+.u-section-4 .u-text-1.contact-us-details {
+    font-family: varela, Roboto, sans-serif;
+    color: #8b5e3b;
+    text-transform: initial;
+    font-size: 1.5rem;
+    direction: rtl;
+    text-align: right;
+    margin: 2rem 0;
 }
 
 .u-section-4 .u-form-1 {
